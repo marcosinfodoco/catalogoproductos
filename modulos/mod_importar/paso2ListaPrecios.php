@@ -121,7 +121,7 @@
                             // cargamos en la variable a el final de linea qeu es el total de registros del array
                             a = response.length;
                             // iniciamos el ciclo
-                            ciclo(response, fabricante);
+                            ciclo(response);
                         }
 
                     }
