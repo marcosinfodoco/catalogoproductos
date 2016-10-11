@@ -242,7 +242,7 @@
 
         </div>
         <script>
-            var lineabarra=0;
+            var lineabarra=1;
             var fabricante;
             var finallinea;
             var arrayConsulta;
@@ -263,7 +263,7 @@
 
             function ComprobarPaso2RefCruzadas() {
                
-                var finallinea = $("#validos").html();
+                 finallinea = $("#validos").html();
                 
                 if (fabricante == 0) {
                     alert("Selecciona un Fabricante");
@@ -349,17 +349,19 @@
 //                        console.log( fabricante);
 //                        console.log("ref cruzada "+ arrayConsulta[intermedia].Ref_F);
 //                        console.log("prof cruzado"+ arrayConsulta[intermedia].F_rec);
-                         console.log("****************");
-                         console.log(response[0].respuesta);
+//                         console.log("****************");
+//                         console.log(response[0].respuesta);
                         
                         if (intermedia == (arrayConsulta.length)-1) {
                             intermedia=0;
                             ComprobarPaso2RefCruzadas();
                         } else {
-                            console.log("esto es la linea intermedia: "+intermedia);
+//                            console.log("esto es la linea intermedia: "+intermedia);
                             
                             intermedia++;
-                            lineabarra+=intermedia;
+                            lineabarra++;
+//                            console.log(lineabarra);
+//                            console.log(finallinea);
                             BarraProceso2(lineabarra,finallinea);
                             grabar();
                         }
